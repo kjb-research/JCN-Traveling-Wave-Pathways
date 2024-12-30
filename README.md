@@ -30,4 +30,23 @@ There are three experiments:
 ## How to run the code:
 As you can see, there are four python files included on this repository. Three represent the code to run our three distinct experiments. The fourth is a shared file, that has code used to create the network and run various analysis. In order to run the code, you will need to download at least one of the three 'experiment' files, along with the shared 'setup' file. Here is how you can tell which is which:
 
-- 
+- 'Wave_1.py' (python file corresponding to the central stimulation experiment)
+- 'Wave_2.py' (python file corresponding to the stochastic stimulation experiment)
+- 'Wave_3.py' (python file corresponding to the alternating stimulation experiment)
+- 'setup.py' (shared setup file for all three of the above)
+
+Once you have these files downloaded into a shared folder, running is simple:
+
+1. start up python in your terminal by typing 'python'
+2. Import the function from the file you want to run. (for central stimulation, this command would be 'from Wave_1 import Wave')
+3. Run the function. It's first argument is the seed number ('seednum'), which is used for reproducibility (using the same seed should yield exactly equivalent results). The second argument is the batch name ('batch'), which is used to place recorded data into the correct folder. Make sure you have an empty folder with the same name in your directory. The third argument is the RATE, which is a scaling factor for the STDP coefficients. Our paper uses RATE = 0, 1, 2, 3, 4 to adjust this as an independent variable.
+
+To recap, to run the code you will type (in terminal):
+
+**python**
+
+**from *filename* import Wave**
+
+**Wave(*seed*, *batch_name*, *STDP_scaling_factor*)**
+
+Remember, you will need a folder with the same name as your *batch_name* in order for the code to run and data to be saved in the desired location. 
