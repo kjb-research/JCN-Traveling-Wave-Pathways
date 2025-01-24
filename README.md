@@ -49,4 +49,4 @@ To recap, to run the code you will type (in terminal):
 
 **Wave(*seed*, *batch_name*, *STDP_scaling_factor*)**
 
-Remember, you will need a folder with the same name as your *batch_name* in order for the code to run and data to be saved in the desired location. 
+Remember, you will need a folder with the same name as your *batch_name* in order for the code to run and data to be saved in the desired location. In order to collect our data, we ran simulations on multiple nodes, each with a different seed, using a bash script. Again, if you have any questions about this work, feel free to email me at kendall.butler.research@gmail.com or our corresponding author, Dr. Luis Cruz.
